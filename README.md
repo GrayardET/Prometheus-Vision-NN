@@ -5,6 +5,10 @@ Users can either train their own model from scrach with layers sizes and number 
 
 ## Demo
 ![original](https://github.com/GrayardET/Prometheus-Vision-NN/blob/master/DemoImage/original.jpg)
+![edgeDetection](https://github.com/GrayardET/Prometheus-Vision-NN/blob/master/DemoImage/edgeDetection.jpg)
+![Vertical](https://github.com/GrayardET/Prometheus-Vision-NN/blob/master/DemoImage/Vertical.jpg)
+![Horizontal](https://github.com/GrayardET/Prometheus-Vision-NN/blob/master/DemoImage/Horizontal.jpg)
+
 ## Usage
 To train the CNN:  
 Watch my demo video on [Demo Video](https://www.youtube.com/watch?v=hOvhwzl06vo)  
