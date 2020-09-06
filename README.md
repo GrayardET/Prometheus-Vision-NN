@@ -4,7 +4,7 @@ This is a project that builds convolutional neural network from scrach using Jav
 Users can either train their own model from scrach with layers sizes and number of hidden neurons of their choice, or make prediction to images using the current model.
 
 ## Demo
-[original](https://github.com/GrayardET/Prometheus-Vision-NN/blob/master/DemoImage/original.jpg = 10x10)
+![original](https://github.com/GrayardET/Prometheus-Vision-NN/blob/master/DemoImage/original.jpg = 10x10)
 ## Usage
 To train the CNN:  
 Watch my demo video on [Demo Video](https://www.youtube.com/watch?v=hOvhwzl06vo)  
