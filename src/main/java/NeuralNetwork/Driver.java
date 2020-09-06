@@ -33,8 +33,8 @@ public class Driver {
 
 
 
-        Preprocessing preprocessing = new Preprocessing("training\\", Option.Grayscale,false);
-//        Preprocessing preprocessing = new Preprocessing("trainingDemo\\", Option.Grayscale,  false);
+//        Preprocessing preprocessing = new Preprocessing("training\\", Option.Grayscale,false);
+        Preprocessing preprocessing = new Preprocessing("trainingDemo\\", Option.Grayscale,  false);
         FeatureLayer trainingSet = preprocessing.getFeatureLayer();
         FeatureBlock demoImg = trainingSet.get(0);
         demoImg.showImage("Original",Option.Grayscale);
@@ -54,15 +54,15 @@ public class Driver {
 
 
         // initialize neural network and start training
-        int[] layerSizes = {10,6,4};
-        NeuralNetwork neuralNetwork = new NeuralNetwork(layerSizes,trainingSet,128,1, preprocessing.getY(),0.9);
-        neuralNetwork.train(0.05,2000);
+        int[] layerSizes = {30,10,4};
+        NeuralNetwork neuralNetwork = new NeuralNetwork(layerSizes,trainingSet,2,1, preprocessing.getY(),0.9);
+        neuralNetwork.train(0.01,200);
         Helper.serializeParameters(neuralNetwork, "SavedParameters\\4.txt");
 
 
         // prediction:
-//        Preprocessing preprocessing2 = new Preprocessing("trainingDemo\\", Option.Grayscale,false);
-        Preprocessing preprocessing2 = new Preprocessing("testing\\", Option.Grayscale,false);
+        Preprocessing preprocessing2 = new Preprocessing("trainingDemo\\", Option.Grayscale,false);
+//        Preprocessing preprocessing2 = new Preprocessing("testing\\", Option.Grayscale,false);
         FeatureLayer testingSet = preprocessing2.getFeatureLayer();
         testingSet.extract(kernel1);
         testingSet.pooling(5);
